@@ -1,0 +1,55 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" enable-background="new" id="svg996" version="1.1" viewBox="0 0 67.733332 67.733335" preserveAspectRatio="xMidYMid meet" style="width: 200px; height: 200px; transform-origin: 50% 50%; transform: scaleX(1) scaleY(1) rotate(0deg);">
+  <title id="title1563">Play</title>
+  <defs id="defs990"/>
+  <metadata id="metadata993">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title>Play</dc:title>
+        <dc:date>19 de Enero del 2019</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Edwin Rodríguez</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Creative Commons Attribution 4.0 International Public License</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:identifier>Play</dc:identifier>
+        <dc:relation/>
+        <dc:language>Español</dc:language>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Icon-Icons</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>play</rdf:li>
+            <rdf:li>multimedia</rdf:li>
+            <rdf:li>audio</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>Audio</dc:coverage>
+        <dc:description>Icono play</dc:description>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g style="fill:#000000;stroke:none" transform="translate(0,-229.26665)" id="layer1" fill="#000000" stroke="none">
+    <circle r="31.75" cy="263.13333" cx="33.866665" id="path821" style="fill:none;fill-rule:evenodd;stroke-width:4.23333334;stroke:#000000;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" fill="none" stroke="#000000"/>
+  </g>
+  <g id="layer2" fill="#000000" style="fill:#000000;stroke:none" stroke="none">
+    <path id="path1545" d="M 21.166667,50.799999 55.033333,32.455557 21.166667,16.933333" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.18423219px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" fill="#000000" stroke="#000000"/>
+  </g>
+</svg>

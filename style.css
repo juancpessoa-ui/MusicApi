@@ -1,0 +1,260 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  display: flex;
+  background-color: #0D0D0D;
+  color: #F5F5F5;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background-color: #1A1A1A;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.logo {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.menu ul,
+.playlist-section ul {
+  list-style: none;
+  font-size: 10px;
+
+}
+
+.menu li,
+.playlist-section li {
+  margin: 12px 0;
+}
+
+.menu a,
+.playlist-section a {
+  text-decoration: none;
+  color: #B3B3B3;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+.menu a:hover,
+.playlist-section a:hover {
+  color: #1DB954;
+}
+hr {
+  border: none;
+  height: 1px; /* Espessura da linha */
+  background-color: #333; /* Cor da linha */
+  width: 100%; /* Opcional: define a largura */
+  margin: 1px auto; /* Opcional: centraliza e dá espaçamento */
+}
+li a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre ícone e texto */
+  text-decoration: none;
+  color: #fff; /* ajuste conforme seu layout */
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition:  0.3s;
+}
+
+li a:hover {
+  background-color: #1f1f1f; /* efeito ao passar o mouse */
+}
+
+li a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* MAIN */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background-color: #1A1A1A;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #2A2A2A;
+  transform: translateY(-5px) scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #B3B3B3;
+}
+
+/* PLAYER */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  height: 70px;
+  background-color: #1A1A1A;
+  border-top: 1px solid #2A2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* MUSIC INFO */
+.music-info {
+  font-size: 14px;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* melhor que margin nos botões */
+}
+
+/* BOTÕES */
+.controls button {
+  border: none;
+  background: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ÍCONES */
+.controls button img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 0.8;
+}
+
+/* BOTÃO CENTRAL (play maior) */
+.controls button:nth-child(2) img {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+
+/* HOVER */
+.controls button:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.1);
+}
+
+.controls button:hover img {
+  opacity: 1;
+}
+
+/* TIME */
+.time {
+  font-size: 12px;
+  color: #B3B3B3;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .player {
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .controls button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1A1A1A;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #F5F5F5;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .search-bar input::placeholder {
+    color: #B3B3B3;
+  }
+  
+  .search-bar button {
+    border: none;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .search-bar button:hover {
+    transform: scale(1.1);
+  }

@@ -2,101 +2,117 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
 
-        <h1 class="logo">♫</h1>
+    <h1 class="logo">MusicApi</h1>
 
-        <nav class="menu">
+    <nav class="menu">
 
-            <ul>
+      <ul>
 
-                <li>
-                    <a href="#">Home</a>
-                </li>
+        <li>
+          <a href="#">
+            <img src="img/home.svg" alt="Home">
+            Home</a>
+        </li>
 
-                <li>
-                    <a href="#">Pesquisar</a>
-                </li>
+        <li>
+          <a href="#">
+            <img src="img/lupa.svg" alt="Pesquisar">Pesquisar</a>
+        </li>
 
-                <li>
-                    <a href="#">Biblioteca</a>
-                </li>
+        <li>
+          <a href="#">
+            <img src="img/book.svg" alt="Biblioteca">
+            Biblioteca</a>
+        </li>
 
-            </ul>
+        <li>
+          <hr>
+          <a href="#">
+            <img src="img/coracao.svg" alt="My favorites">
+            My Favorites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/mais.svg" alt="Create Playlist">
+            Create Playlist
+          </a>
+        </li>
+      </ul>
 
-        </nav>
+    </nav>
 
-    </aside>
+  </aside>
 
-    <!-- CONTEÚDO -->
-    <main class="main-content">
+  <!-- CONTEÚDO -->
+  <main class="main-content">
 
-        <!-- BUSCA -->
-        <div class="search-bar">
+    <!-- BUSCA -->
+    <div class="search-bar">
 
-            <input
-                type="text"
-                placeholder="Buscar músicas..."
-                id="inputBusca"
-            >
+      <input type="text" placeholder="Buscar músicas..." id="inputBusca">
+      <li>
+        <button id="btnBuscar">
+          <img src="./img/lupa.svg" alt="Buscar">
+        </button>
+      </li>
+    </div>
 
-            <button id="btnBuscar">
-                🔍
-            </button>
+    <!-- TÍTULO -->
+    <div class="header">
 
-        </div>
+      <h2>Músicas populares</h2>
 
-        <!-- TÍTULO -->
-        <div class="header">
+    </div>
 
-            <h2>Músicas populares</h2>
+    <!-- CARDS -->
+    <section class="cards">
 
-        </div>
+    </section>
 
-        <!-- CARDS -->
-        <section class="cards">
 
-        </section>
 
-    </main>
+  </main>
 
-    <!-- PLAYER FIXO -->
+  <!-- PLAYER FIXO -->
+  <footer class="player">
+
+    <div class="music-info">
+
+      <strong id="nomeMusica">
+        Nenhuma música
+      </strong>
+
+      <p id="nomeArtista">
+        Escolha uma música
+      </p>
+
+    </div>
     <footer class="player">
+      <div class="music-info">
+        <strong>Música atual</strong>
+        <p>Artista</p>
+      </div>
 
-        <div class="music-info">
+      <div class="controls">
+        <button><img src="./img/play1.png" alt=""></button>
+        <button><img src="./img/play.svg" alt=""></button>
+        <button><img src="./img/play2.png" alt=""></button>
+      </div>
 
-            <strong id="nomeMusica">
-                Nenhuma música
-            </strong>
-
-            <p id="nomeArtista">
-                Escolha uma música
-            </p>
-
-        </div>
-          <footer class="player">
-          <div class="music-info">
-          <strong>Música atual</strong>
-          <p>Artista</p>
-        </div>
-  
-        <div class="controls">
-          <button><img src="./img/play1.png" alt=""></button>
-          <button><img src="./img/play.svg" alt=""></button>
-          <button><img src="./img/play2.png" alt=""></button>
-        </div>
-
-        <div class="time">
+      <div class="time">
         00:00 / 03:30
     </footer>
 

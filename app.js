@@ -53,13 +53,9 @@ function criarCard(track) {
     card.addEventListener('click', () => {
 
         nomeMusica.textContent = track.title
-
         nomeArtista.textContent = track.artist.name
-
         audio.src = track.preview
-
         audio.play()
-
     })
 
     return card

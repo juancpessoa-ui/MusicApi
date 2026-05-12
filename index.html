@@ -1,127 +1,107 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music App</title>
+<html lang="pt-BR">
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <h1 class="logo"> Musica</h1>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-    <nav class="menu">
-      <ul>
-        <li><a href="#">
-          <img src="./img/lupa.svg" alt="lupa">
-          Buscar
-        </a>
-        <li>
-          <a href="#">
-            <img src="./img/home.svg" alt="home">
-            Home
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            <img src="./img/book.svg" alt="biblioteca">
-            Sua Biblioteca
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            <img src="./img/mais.svg" alt="liked songs">
-            Liked Songs
-          </a>
-        </li>
-        <hr>
-      </ul>
-    </nav>
+        <h1 class="logo">♫</h1>
 
-    <div class="playlist-section">
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Pesquisar</a>
+                </li>
+
+                <li>
+                    <a href="#">Biblioteca</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="main-content">
+
+        <!-- BUSCA -->
+        <div class="search-bar">
+
+            <input
+                type="text"
+                placeholder="Buscar músicas..."
+                id="inputBusca"
+            >
+
+            <button id="btnBuscar">
+                🔍
+            </button>
+
+        </div>
+
+        <!-- TÍTULO -->
+        <div class="header">
+
+            <h2>Músicas populares</h2>
+
+        </div>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+        </section>
+
+    </main>
+
+    <!-- PLAYER FIXO -->
+    <footer class="player">
+
+        <div class="music-info">
+
+            <strong id="nomeMusica">
+                Nenhuma música
+            </strong>
+
+            <p id="nomeArtista">
+                Escolha uma música
+            </p>
+
+        </div>
+          <footer class="player">
+          <div class="music-info">
+          <strong>Música atual</strong>
+          <p>Artista</p>
+        </div>
   
-      <ul>
-        <li><a href="#">My Favorites</a></li>
-        <li><a href="#">Chill Vibes</a></li>
-        <li><a href="#">Treino</a></li>
+        <div class="controls">
+          <button><img src="./img/play1.png" alt=""></button>
+          <button><img src="./img/play.svg" alt=""></button>
+          <button><img src="./img/play2.png" alt=""></button>
+        </div>
 
-      </ul>
-    </div>
-  </aside>
+        <div class="time">
+        00:00 / 03:30
+    </footer>
 
-  
-
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main class="main-content">
-
-    <!-- HEADER -->
-    <div class="search-bar">
-      <h1>Seus álbuns e artistas favoritos </h1>
-      
-      </div>
-      
-
-    <!-- GRID DE CARDS -->
-    <section class="cards">
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Capa">
-        <h4>Playlist 1</h4>
-        <p>As melhores músicas</p>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Capa">
-        <h4>Playlist 2</h4>
-        <p>Hits do momento</p>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Capa">
-        <h4>Playlist 3</h4>
-        <p>Relax e foco</p>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Capa">
-        <h4>Playlist 4</h4>
-        <p>Top global</p>
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- PLAYER FIXO -->
-  <footer class="player">
-
-    <div class="music-info">
-      <strong>Música atual</strong>
-      <p>Artista</p>
-    </div>
-    
-    <div class="controls">
-      
-      <button><img src="./img/play1.png" alt=""></button>
-      <button><img src="./img/play.svg" alt=""></button>
-      <button><img src="./img/play2.png" alt=""></button>
-      
-      
-    </div>
-  
-    <div class="time">
-      00:00 / 03:30
-    
-
-  </footer>
+    <script src="app.js"></script>
 
 </body>
-</html>
 
+</html>

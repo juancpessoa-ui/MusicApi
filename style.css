@@ -83,7 +83,11 @@ li a img {
   height: 20px;
   object-fit: contain;
 }
-
+.btnBuscar{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
 /* MAIN */
 .main-content {
   flex: 1;
